@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/danilojduarte/ProjetoListaDeFilmes/issues"
   },
-  "homepage": "https://github.com/danilojduarte/ProjetoListaDeFilmes#readme"
+  "homepage": "https://github.com/danilojduarte/ProjetoListaDeFilmes#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
