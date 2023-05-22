@@ -7,5 +7,13 @@ const setupScrolling = () => {
     container.forEach((item, i)=>{
         let containerDimensions = item.getBoundingClientRect()
         let containerWidth = containerDimensions.width
+
+        nextBtn[i].addEventListener('click', ()=>{
+            item.scrollLeft += containerWidth
+        })
+
+        prevtBtn[i].addEventListener('click', ()=>{
+            item.scrollLeft -= containerWidth
+        })
     })
 }
