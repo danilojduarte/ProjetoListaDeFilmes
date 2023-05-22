@@ -88,8 +88,9 @@ body {
 .movie-category {
     font-size: 20px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-bottom: 20px;
     text-transform: capitalize;
+
 }
 
 .movie-category::-webkit-scrollbar {
@@ -121,5 +122,38 @@ body {
     width: 100%;
     height: 170px;
     object-fit: cover;
+}
+
+.movie p {
+    text-transform: capitalize;
+    height: 20px;
+    overflow: hidden;
+}
+
+.pre-btn,
+.next-btn {
+    background: #181818;
+}
+
+.pre-btn,
+.next-btn i {
+    position: relative;
+    width: 2.5vw;
+    height: 150px;
+    font-size: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #181818;
+    color: red;
+    border: none;
+    outline: none;
+}
+
+.pre-btn i {
+    left: -2.5vw;
+}
+
+.next-btn i {
+    right: -2.5vw;
 }
 
