@@ -5,12 +5,10 @@ fetch(genresListHttp + new URLSearchParams({
 }))
 .then(res => res.json())
 .then(data => {
-
     data.genres.forEach(item => {    
     fetchMoviesListByGenres(item.id, item.name)
     });
 })
-
 
 const fetchMoviesListByGenres = (id, genres) => {
     fetch(movieGenresHttp + new URLSearchParams({
